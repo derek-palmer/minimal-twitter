@@ -1,17 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Simple Twitter",
+  "name": "Minimal Twitter",
   "version": "0.1",
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["assets/jquery/jquery-3.5.1.min.js", "content.js"]
-    }
-  ],
-  "browser_action": {
-    "default_action": "assets/images/icon.png"
-  }
+  "description": "Removes everything except your timeline + navigation to keep things nice and clean.",
+
+   "content_scripts": [{
+    "css": ["styles.css"],
+    "matches": ["https://twitter.com/*"]
+  }]
 }
