@@ -1,1 +1,1 @@
-# simple-twitter
+# Minimal Twitter

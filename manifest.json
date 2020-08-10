@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Minimal Twitter",
+  "version": "0.1",
+  "description": "Removes everything except your timeline + navigation to keep things nice and clean.",
+
+   "content_scripts": [{
+    "css": ["styles.css"],
+    "matches": ["https://twitter.com/*"]
+  }]
+}
